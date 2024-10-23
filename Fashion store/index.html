@@ -1,0 +1,231 @@
+<html>
+ <head>
+  <title>
+   Fashion Store
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@300;400&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f5f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #f8f5f0;
+        }
+        header .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #c5a47e;
+        }
+        header .search-cart {
+            display: flex;
+            align-items: center;
+        }
+        header .search-cart i {
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        header .subscribe-btn {
+            background-color: #c5a47e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        header .subscribe-btn:hover {
+            background-color: #a3835e;
+        }
+        .main-content {
+            padding: 40px;
+        }
+        .main-content .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main-content .intro .text {
+            max-width: 50%;
+        }
+        .main-content .intro .text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin: 0;
+        }
+        .main-content .intro .text p {
+            font-size: 16px;
+            color: #666;
+            margin: 20px 0;
+        }
+        .main-content .intro .text .shop-btn {
+            background-color: #c5a47e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .main-content .intro .text .shop-btn:hover {
+            background-color: #a3835e;
+        }
+        .main-content .intro .image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .main-content .categories {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px 0;
+        }
+        .main-content .categories a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 400;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .main-content .categories a:hover {
+            color: #c5a47e;
+        }
+        .main-content .categories .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .main-content .categories .search-bar input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+        }
+        .main-content .categories .search-bar button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-radius: 0 20px 20px 0;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .main-content .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .main-content .products .product {
+            text-align: center;
+        }
+        .main-content .products .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="logo">
+    Chic & Charm
+   </div>
+   <nav>
+    <a href="#">
+     Men
+    </a>
+    <a href="#">
+     Women
+    </a>
+    <a href="#">
+     Accessories
+    </a>
+    <a href="#">
+     Blog
+    </a>
+    <a href="#">
+     Contact
+    </a>
+   </nav>
+   <div class="search-cart">
+    <i class="fas fa-search">
+    </i>
+    <i class="fas fa-shopping-cart">
+    </i>
+    <button class="subscribe-btn">
+     Subscribe
+    </button>
+   </div>
+  </header>
+  <div class="main-content">
+   <div class="intro">
+    <div class="text">
+     <h1>
+        Chic Fashion for Every You.
+     </h1>
+     <p>
+        Embrace the latest trends, expertly crafted to express your unique style.
+     </p>
+     <button class="shop-btn">
+      Open Shop
+     </button>
+    </div>
+    <div class="image">
+     <img alt="Woman wearing a beige sweater" height="500" src="https://storage.googleapis.com/a1aa/image/TbaRSP2g1QZEFpmPf8VT9RykhCNlH0IAAe75BT7ZoEDFlvnTA.jpg" width="500"/>
+    </div>
+   </div>
+   <div class="categories">
+    <a href="#">
+     Best of the Week
+    </a>
+    <a href="#">
+     Shirts
+    </a>
+    <a href="#">
+     Pants
+    </a>
+    <a href="#">
+     Accessories
+    </a>
+    <a href="#">
+     New Arrivals
+    </a>
+    <div class="search-bar">
+     <input placeholder="Search" type="text"/>
+     <button>
+      <i class="fas fa-search">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="products">
+    <div class="product">
+     <img alt="Man wearing a black outfit" height="400" src="gal4.jpg" width="300"/>
+    </div>
+    <div class="product">
+     <img alt="woman Fashion shoot" height="400" src="gal2.jpg" width="300"/>
+    </div>
+    <div class="product">
+     <img alt="blue outfit" height="400" src="gallery3.jpg" width="300"/>
+    </div>
+    <div class="product">
+     <img alt="Man wearing a white shirt" height="400" src="gallery.jpg" width="350"/>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
